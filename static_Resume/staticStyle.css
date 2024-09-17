@@ -1,0 +1,185 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    box-shadow: 1cap 1px 10px 1cap rgba(77, 74, 74, 0.9);
+    padding: 20px;
+  }
+  
+  #mainDiv {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #d1a7c9;
+    box-shadow: 1px 1px 10px 1cap rgba(201, 90, 160, 0.9);
+    margin: 30px auto;
+  }
+  
+  
+  img {
+    width: 120px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px dashed purple;
+    box-shadow: 0.3cap 0px 15px 0.5cap #060606de;
+  }
+  
+  .personal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .personal h1 {
+    font-size: 40px;
+    background: linear-gradient(90deg, #b41c9d 0%, #3a47d5 100%);
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .personal h2 {
+    font-size: 18px;
+    margin-top: 5px;
+    background-clip: text;
+    background: linear-gradient(90deg, #b41c9d 0%, #3a47d5 100%);
+  }
+  
+  .contact-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #b451a1;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .contact-info .para {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .heading {
+    font-size: 24px;
+    background-clip: text;
+    background: linear-gradient(90deg, #b41c9d 0%, #3a47d5 100%);
+    color: #121111;
+    padding: 10px;
+    background-color: #ececec;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+
+  .heading:hover, .contact-info:hover{
+    border: 2px dashed rgb(0, 0, 0);
+
+  }
+  
+  .contPara {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  #skillSec ul {
+    margin-left: 25px;
+  }
+  
+  #btnDiv {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(196, 130, 175);
+    box-shadow: 1px 1px 10px 1cap rgba(201, 90, 160, 0.9);
+    border-radius: 10px;
+  }
+  h3{
+    background-clip: text;
+    background: linear-gradient(90deg, #b41c9d 0%, #3a47d5 100%);
+    color: #121111;
+    padding: 10px;
+    background-color: #ececec;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #fff;
+    color: #333;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+    box-shadow:  0 0 5px #6380df, 0 0 15px #6380df, 0 0 25px #6380df, 0 0 100px #6380df;
+
+  }
+  
+  .btn:hover {
+    background-color: #f0f0f0;
+    box-shadow: 2px 4px 6px 2px rgba(0, 0, 0, 0.4);
+  }
+  
+  .sp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #mainDiv, #btnDiv {
+      width: 100%;
+    }
+  
+    .personal {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    img {
+      margin-top: 20px;
+    }
+  
+    .contact-info {
+      flex-direction: column;
+    }
+  
+    .btn {
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+  
+  #objectiveSec{
+    display: block;
+  }
+  
+  #eduSec{
+    display: block;
+  }
+  
+  #skillSec{
+    display: block;
+  }
+  
+  #workExpSec{
+    display: block;
+  }
