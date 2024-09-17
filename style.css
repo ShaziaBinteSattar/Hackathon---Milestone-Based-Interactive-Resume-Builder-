@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 50px;
+  padding-top: 50px;
+  background: linear-gradient(rgba(120, 117, 116, 0.5), rgba(50, 4, 78, 0.5),rgba(224, 11, 164, 0.5));
+}
+
+.headingStyle {
+  width: 90%;
+  height: 130px;
+  border: 0px solid;
+  box-shadow: 1cap 3px 10px 1cap rgb(115, 105, 143);
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  margin: auto;
+  
+}
+
+.myHeading {
+  font-size: 60px;
+  margin-bottom: 10px;
+  background: linear-gradient(to left, white, rgb(17, 17, 17), rgb(101, 5, 5), rgb(56, 81, 56), rgb(191, 176, 176));
+  background-clip: text;
+  color: transparent;
+}
+
+#header h2 {
+  font-size: 40px;
+  background: linear-gradient(to right, hsl(25, 85%, 31%) 10%, #c41e71 50%, #2e3bc9 100%);
+  background-clip: text;
+  color: transparent;
+}
+
+#main {
+  margin-left: 4%;
+  margin-right: 4%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: -40px;
+  margin-bottom: -40px;
+}
+
+#staticResume {
+  width: 50%;
+  height: 320px;
+  background: #000;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  transition: 0.5s;
+}
+
+#dynamicResume {
+  width: 50%;
+  height: 320px;
+  background: #000;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  transition: 0.5s;
+}
+.mt30{
+  margin-top: 20px;
+}
+
+.mb40 {
+  margin-bottom: 30px;
+}
+
+.p40 {
+  padding: 40px;
+}
+
+.zoom {
+  transform: scale(0.6);
+  transition: transform 0.5s;
+}
+.zoom:hover {
+  transform: scale(0.8);
+  border: 15px dashed white;
+}
+
+
+.anchor {
+  display: block;
+  font-size: 35px;
+  text-decoration: none;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.para {
+  font-size: 25px;
+  margin-top: 20px;
+  color: white;
+}
+
+footer p {
+  font-size: 20px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.border {
+  border: 14px solid rgb(237, 227, 227);
+  border-radius: 100px;
+}
+#header, #footer {
+  height: 150px;
+  background: linear-gradient(rgba(120, 117, 116, 0.4), rgba(50, 4, 78, 0.4),rgba(224, 11, 164, 0.4));
+}
