@@ -1,0 +1,211 @@
+/* Universal styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e9d2d9; /* Corrected background color */
+}
+
+#mainDiv {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #edc4e8;
+  margin-top: 30px;
+  box-shadow: 1px 3px 15px 1px rgba(0, 0, 0, 0.9);
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px dashed aqua;
+  box-shadow: 1cap 0px 10px 1cap rgb(73, 90, 90);
+}
+
+.personal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.personal h1, .personal h2 {
+  font-size: 45px;
+  color: transparent;
+  background: linear-gradient(to left, white, rgb(204, 14, 14), rgb(17, 181, 218), rgb(42, 30, 175), rgb(222, 43, 195));
+  background-clip: text;
+}
+
+.personal h2 {
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #e0f7fa;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #6380df, 0 0 15px #6380df, 0 0 25px #6380df, 0 0 100px #6380df;
+  margin-top: 20px;
+}
+
+.contact-info .para {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.heading {
+  font-size: 24px;
+  color: #444;
+  padding: 10px;
+  background-color: #ececec;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.contPara {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+#skillSec ul {
+  margin-left: 25px;
+}
+
+/* Button Styles */
+.btn, .btn1 {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn {
+  width: 40%;
+  padding: 10px;
+  background-color:rgb(242, 164, 218);
+  color: #333;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn1 {
+  width: 100%;
+  background-color: rgb(228, 57, 177);
+  color: black;
+}
+
+.btn:hover {
+  background-color: #f0f0f0;
+    box-shadow: 0 0 5px #6380df, 0 0 15px #6380df, 0 0 25px #6380df, 0 0 100px #6380df;
+}
+
+.btn1:hover {
+  background-color: #ded6dc;
+  box-shadow: 0 0 5px #6380df, 0 0 15px #6380df, 0 0 25px #6380df, 0 0 100px #6380df;
+}
+
+.btn:active, .btn1:active {
+  background-color: #ded6dc;
+  box-shadow: 2px 4px 6px 2px rgba(0, 0, 0, 0.4);
+}
+
+/* Button Container Styles */
+#btnDiv {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  border: 4px solid #350c2d;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #5a5c5c;
+}
+
+/* Button Row Styles */
+.button-row {
+  display: flex;
+  justify-content: space-between; /* Space buttons evenly */
+  width: 100%;
+  margin-bottom: 10px; /* Space between button row and shareable link section */
+}
+
+.button-row .btn1 {
+  flex: 1; /* Equal width for both buttons */
+  margin-right: 10px; /* Space between buttons */
+}
+
+.button-row .btn1:last-of-type {
+  margin-right: 0; /* Remove margin from the last button */
+}
+
+/* Shareable Link and Copy Link Layout */
+#btnDiv .share-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#btnDiv .share-container #resumeLink {
+  width: calc(100% - 15% - 10px); /* Full width minus 15% for Copy Link button and 10px margin */
+}
+
+#btnDiv .share-container #copyLinkBtn {
+  width: 15%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #mainDiv, #btnDiv {
+    width: 100%;
+  }
+
+  .personal {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  img {
+    margin-top: 20px;
+  }
+
+  .contact-info {
+    flex-direction: column;
+  }
+
+  .btn, .btn1 {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  #btnDiv .share-container {
+    flex-direction: column;
+  }
+
+  #copyLinkBtn {
+    width: 100%; /* Ensure full width on smaller screens */
+    margin-left: 0;
+  }
+}
+
+@media print {
+  #btnDiv {
+    display: none; /* Hide the buttons when printing */
+  }
+}
